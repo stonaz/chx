@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    text-align:center;
+}
+div {
+    text-align:left;
+}
+.galleria-stage {
+    height:420px;
+    width: 980px;
+}
+.galleria-thumbnails-container {
+	width: 980px;
+}
+.galleria-thumbnails-list {
+    width:820px;
+}
+#home_content {
+    margin-left:100px !important;
+}
+#main_bottom {
+    margin-left:200px !important;
+    margin-top:0 !important;
+}
+#chx_main_menu {
+    height: 438px;
+}
+#vertical_container {
+     height:100%;
+     width:990px;
+     margin:0 auto;
+ }
+.galleria-info {
+    width: 70%;
+    /*bottom: 100px !important;*/
+    left: 15%;
+    z-index: 2;
+    position: absolute;
+    display: none;
+    text-align: center;
+}

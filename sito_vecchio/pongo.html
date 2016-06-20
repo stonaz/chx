@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><!-- InstanceBegin template="/Templates/chx_gallery.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Paola Chartroux - illustrazioni</title>
+<!-- InstanceEndEditable -->
+	<script type="text/javascript"  language="Javascript" src="code/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript"  language="Javascript" src="code/galleria/galleria.js"></script>
+	<script type="text/javascript" language="Javascript" src="code/chx.js"></script>
+	<script type="text/javascript" language="Javascript">//Galleria.loadTheme('code/galleria/themes/classic/galleria.classic.js');</script>
+	<link rel="stylesheet" href="code/style.css" type="text/css" media="screen">
+	<!--[if IE]> <link rel="stylesheet" href="code/ie6.css" type="text/css" media="screen,projection"/> <![endif]-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="paola chartroux,illustrazioni,plastilina,pongo">
+<script language="JavaScript" type="text/javascript">
+<!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+	// NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+	try {
+		// version will be set for 7.X or greater players
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 6.X players only
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			
+			// installed player is some revision of 6.0
+			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+			// so we have to be careful. 
+			
+			// default to the first public version
+			version = "WIN 6,0,21,0";
+			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+			axo.AllowScriptAccess = "always";
+			// safe to call for 6.0r47 or greater
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 4.X or 5.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 3.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 2.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+	
+	return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+	// NS/Opera version >= 3 check for Flash plugin in plugin array
+	var flashVer = -1;
+	
+	if (navigator.plugins != null && navigator.plugins.length > 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");			
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") > 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE && isWin && !isOpera ) {
+		flashVer = ControlVersion();
+	}	
+	return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE && isWin && !isOpera) {
+			// Given "WIN 2,0,0,11"
+			tempArray         = versionStr.split(" "); 	// ["WIN", "2,0,0,11"]
+			tempString        = tempArray[1];			// "2,0,0,11"
+			versionArray      = tempString.split(",");	// ['2', '0', '0', '11']
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+        	// is the major.revision >= requested major.revision AND the minor version >= requested minor
+		if (versionMajor > parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor > parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision >= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE && isWin && !isOpera)
+  {
+    str += '<object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '>';
+    for (var i in params)
+    {
+      str += '<param name="' + i + '" value="' + params[i] + '"> ';
+    }
+    str += '</object>';
+  }
+  else
+  {
+    str += '<embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '> </embed>';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i < args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){	
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":	
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 6;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 79;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){  
+	$('.images').galleria();
+	// manage rollovers
+	setRollover('page_info');
+	setRollover('page_posta');
+
+	$("#menu_pongo a img").attr("src","images/menu_pongo_on.gif");
+	$("#menu_pongo").addClass("current");
+	for (var i in sections ) {
+		hilightMenu("menu_"+i,false);
+	}
+	setRolloverMenu('menu_disegni');
+	setRolloverMenu('menu_pongo');
+	setRolloverMenu('menu_bambini');
+	setRolloverMenu('menu_mappe');
+
+});  
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<div id="vertical_container">
+		<div id="chx_container">
+
+			<div id="chx_patella">
+				<a href="index.html">
+				<!--url's used in the movie-->
+				<!--text used in the movie-->
+				<script language="JavaScript" type="text/javascript">
+				<!--
+				var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+				if(hasRightVersion) {  // if we've detected an acceptable version
+					// embed the flash movie
+					AC_FL_RunContent(
+						'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0',
+						'width', '258',
+						'height', '110',
+						'src', 'images/patella2010',
+						'quality', 'high',
+						'pluginspage', 'http://www.adobe.com/go/getflashplayer',
+						'align', 'middle',
+						'play', 'true',
+						'loop', 'true',
+						'scale', 'showall',
+						'wmode', 'transparent',
+						'devicefont', 'false',
+						'id', 'patella2010',
+						'bgcolor', '#ffffff',
+						'name', 'patella2010',
+						'menu', 'false',
+						'allowFullScreen', 'false',
+						'allowScriptAccess','sameDomain',
+						'movie', 'images/patella2010',
+						'salign', ''
+						); //end AC code
+				} else {  // flash is too old or we can't detect the plugin
+					var alternateContent ='';
+					/* 
+						'<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0" width="258" height="110">'
+					    +'<param name="movie" value="images/patella2010.swf">'
+					    +'<param name="quality" value="high">'
+					    +'<param name="wmode" value="transparent">'
+					    +'<embed src="images/patella2010.swf" width="258" height="110" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">'
+					  +'</object>';*/
+					document.write(alternateContent);  // insert non-flash content
+				}
+				// -->
+				</script>
+				<noscript>
+				  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0" width="258" height="110">
+				    <param name="movie" value="images/patella2010.swf">
+				    <param name="quality" value="high">
+				    <param name="wmode" value="transparent">
+				    <embed src="images/patella2010.swf" width="258" height="110" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+				  </object>
+				</noscript>
+				</a>
+			</div>
+			<div id="chx_header">
+<div id="menu_content">
+
+	<div id="chx_menu">
+		<div id="menu_disegni">
+			<a href="disegni.html"><img class="menu" src="images/menu_disegni_off.gif" width="125" height="55" border="0"></a>
+			<div id="menu_disegni_redbox" class="redbox"></div>
+		</div>
+		<div id="menu_pongo">
+			<a href="pongo.html"><img class="menu" src="images/menu_pongo_off.gif" width="125" height="55" border="0"></a>
+			<div id="menu_pongo_redbox" class="redbox"></div>
+		</div>
+		<div id="menu_bambini">
+			<a href="bambini.html"><img class="menu" src="images/menu_bambini_off.gif" width="125" height="55" border="0"></a>
+			<div id="menu_bambini_redbox" class="redbox"></div>
+		</div>
+		<div id="menu_mappe">
+			<a href="mappe.html"><img class="menu" src="images/menu_mappe_off.gif" width="125" height="55" border="0"></a>
+			<div id="menu_mappe_redbox" class="redbox"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+		  </div>
+			<div class="clear"></div>
+			<div id="chx_page">
+			<div id="left_spacer"></div>
+				<div id="chx_content">
+<!-- InstanceBeginEditable name="content" -->
+<div class="images">
+<a href="2011/pongo/01_ScultureM.jpg"><img src="2011/pongo/i01_ScultureM.jpg" alt="" title="Molletta"></a>
+<a href="2011/pongo/02_ScultureG.jpg"><img src="2011/pongo/i02_ScultureG.jpg" alt="" title="Al mare"></a>
+<a href="2011/pongo/03_ScultureF.jpg"><img src="2011/pongo/i03_ScultureF.jpg" alt="" title="Un uccello in testa"></a>
+<a href="2011/pongo/04_ScultureA.jpg"><img src="2011/pongo/i04_ScultureA.jpg" alt="" title=""></a>
+<a href="2011/pongo/05_AlberiD.jpg"><img src="2011/pongo/i05_AlberiD.jpg" alt="" title=""></a>
+<a href="2011/pongo/06_AlberiA.jpg"><img src="2011/pongo/i06_AlberiA.jpg" alt="" title=""></a>
+<a href="2011/pongo/07_AlberiB.jpg"><img src="2011/pongo/i07_AlberiB.jpg" alt="" title=""></a>
+<a href="2011/pongo/08_TrueLove.jpg"><img src="2011/pongo/i08_TrueLove.jpg" alt="" title=""></a>
+<a href="2011/pongo/09_PietroI.jpg"><img src="2011/pongo/i09_PietroI.jpg" alt="" title=""></a>
+<a href="2011/pongo/010_PietroA.jpg"><img src="2011/pongo/i010_PietroA.jpg" alt="" title=""></a>
+<a href="2011/pongo/011_PietroD.jpg"><img src="2011/pongo/i011_PietroD.jpg" alt="" title=""></a>
+<a href="2011/pongo/012_PietroF.jpg"><img src="2011/pongo/i012_PietroF.jpg" alt="" title=""></a>
+<a href="2011/pongo/013_OttoA.jpg"><img src="2011/pongo/i013_OttoA.jpg" alt="" title=""></a>
+<a href="2011/pongo/014_OttoC.jpg"><img src="2011/pongo/i014_OttoC.jpg" alt="" title=""></a>
+<a href="2011/pongo/015_OttoB.jpg"><img src="2011/pongo/i015_OttoB.jpg" alt="" title=""></a>
+<a href="2011/pongo/016_AstroC.jpg"><img src="2011/pongo/i016_AstroC.jpg" alt="" title=""></a>
+<a href="2011/pongo/017_AstroF.jpg"><img src="2011/pongo/i017_AstroF.jpg" alt="" title=""></a>
+<a href="2011/pongo/018_AstroD.jpg"><img src="2011/pongo/i018_AstroD.jpg" alt="" title="è"></a>
+<a href="2011/pongo/019_ScultureN.jpg"><img src="2011/pongo/i019_ScultureN.jpg" alt="" title="Testa nera, vaso"></a>
+<a href="2011/pongo/020_ScultureH.jpg"><img src="2011/pongo/i020_ScultureH.jpg" alt="" title="Traino"></a>
+<a href="2011/pongo/021_ScultureE.jpg"><img src="2011/pongo/i021_ScultureE.jpg" alt="" title="Testa nera"></a>
+<a href="2011/pongo/022_ScultureC.jpg"><img src="2011/pongo/i022_ScultureC.jpg" alt="" title="Al vento"></a>
+<a href="2011/pongo/023_ScultureL.jpg"><img src="2011/pongo/i023_ScultureL.jpg" alt="" title=""></a>
+<a href="2011/pongo/024_AlberiC.jpg"><img src="2011/pongo/i024_AlberiC.jpg" alt="" title=""></a>
+<a href="2011/pongo/025_AlberiE.jpg"><img src="2011/pongo/i025_AlberiE.jpg" alt="" title=""></a>
+<a href="2011/pongo/026_CasaC.jpg"><img src="2011/pongo/i026_CasaC.jpg" alt="" title=""></a>
+<a href="2011/pongo/027_CasaA.jpg"><img src="2011/pongo/i027_CasaA.jpg" alt="" title=""></a>
+<a href="2011/pongo/028_CasaB.jpg"><img src="2011/pongo/i028_CasaB.jpg" alt="" title=""></a>
+<a href="2011/pongo/029_CasaD.jpg"><img src="2011/pongo/i029_CasaD.jpg" alt="" title=""></a>
+<a href="2011/pongo/030_PietroH.jpg"><img src="2011/pongo/i030_PietroH.jpg" alt="" title=""></a>
+<a href="2011/pongo/031_PietroC.jpg"><img src="2011/pongo/i031_PietroC.jpg" alt="" title=""></a>
+<a href="2011/pongo/032_PietroB.jpg"><img src="2011/pongo/i032_PietroB.jpg" alt="" title=""></a>
+<a href="2011/pongo/033_AstroB.jpg"><img src="2011/pongo/i033_AstroB.jpg" alt="" title=""></a>
+<a href="2011/pongo/034_AstroE.jpg"><img src="2011/pongo/i034_AstroE.jpg" alt="" title=""></a>
+<a href="2011/pongo/035_AstroA.jpg"><img src="2011/pongo/i035_AstroA.jpg" alt="" title=""></a>
+<a href="2011/pongo/036_PietroE.jpg"><img src="2011/pongo/i036_PietroE.jpg" alt="" title=""></a>
+<a href="2011/pongo/037_PietroL.jpg"><img src="2011/pongo/i037_PietroL.jpg" alt="" title=""></a>
+<a href="2011/pongo/038_PietroG.jpg"><img src="2011/pongo/i038_PietroG.jpg" alt="" title=""></a>
+<a href="2011/pongo/039_OttoI.jpg"><img src="2011/pongo/i039_OttoI.jpg" alt="" title=""></a>
+<a href="2011/pongo/040_OttoE.jpg"><img src="2011/pongo/i040_OttoE.jpg" alt="" title=""></a>
+<a href="2011/pongo/041_OttoD.jpg"><img src="2011/pongo/i041_OttoD.jpg" alt="" title=""></a>
+<a href="2011/pongo/042_ScultureD.jpg"><img src="2011/pongo/i042_ScultureD.jpg" alt="" title="Fiera"></a>
+<a href="2011/pongo/043_ScultureB.jpg"><img src="2011/pongo/i043_ScultureB.jpg" alt="" title="Riposo"></a>
+<a href="2011/pongo/044_ScultureP.jpg"><img src="2011/pongo/i044_ScultureP.jpg" alt="" title="Candelabro Eva"></a>
+<a href="2011/pongo/045_ScultureQ.jpg"><img src="2011/pongo/i045_ScultureQ.jpg" alt="" title="Guardando lontano"></a>
+<a href="2011/pongo/046_ScultureR.jpg"><img src="2011/pongo/i046_ScultureR.jpg" alt="" title="Riposo 1"></a>
+<a href="2011/pongo/047_OttoH.jpg"><img src="2011/pongo/i047_OttoH.jpg" alt="" title=""></a>
+<a href="2011/pongo/048_OttoN.jpg"><img src="2011/pongo/i048_OttoN.jpg" alt="" title=""></a>
+<a href="2011/pongo/049_OttoL.jpg"><img src="2011/pongo/i049_OttoL.jpg" alt="" title=""></a>
+<a href="2011/pongo/050_OttoM.jpg"><img src="2011/pongo/i050_OttoM.jpg" alt="" title=""></a>
+<a href="2011/pongo/051_OttoF.jpg"><img src="2011/pongo/i051_OttoF.jpg" alt="" title=""></a>
+<a href="2011/pongo/052_ScultureI.jpg"><img src="2011/pongo/i052_ScultureI.jpg" alt="" title=""></a>
+<a href="2011/pongo/053_ScultureO.jpg"><img src="2011/pongo/i053_ScultureO.jpg" alt="" title=""></a>
+</div>
+<!-- InstanceEndEditable -->
+
+              </div>
+			</div>
+			<div id="page_extras">
+				<div id="page_info">
+					<a href="curriculum.html"><img src="images/info_off.gif" width="38" height="38" border="0"></a>
+				</div>
+				<div id="page_posta">
+					<a href="mailto:paola@chx.it"><img src="images/bottone_posta_off.gif" width="55" height="60" border="0"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	Galleria.loadTheme('code/galleria/themes/classic/galleria.classic.js');
+</script>
+</body>
+<!-- InstanceEnd --></html>

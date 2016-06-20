@@ -1,0 +1,176 @@
+html,body {margin:0;padding:0;border:0;}
+
+body
+{
+	background-color:#FFFFCC;
+	font: 85%/1.3 "Trebuchet MS",Helvetica,sans-serif;
+	color:#333;
+}
+
+.clear { clear: both }  
+
+
+a {text-decoration:none;color:#333;}
+a:hover {text-decoration:underline;}
+
+div#vertical_container {
+  /*position: absolute;
+  top: 50%;*/
+/*
+  left: 0px;
+  width: 100%;
+  height: 600px;
+  overflow: visible;*/
+}
+
+.hover {
+	/*border-bottom:5px solid #AB170B;*/
+	border-top:5px solid #FFF;
+}
+.menu {
+	/*border-bottom:5px solid #FFF;*/
+	border-top:5px solid #FFF;
+}
+#inner {
+}
+
+div#chx_container {
+	margin: 0 auto;
+	border:5px solid #AB170B;
+	width:1000px;
+	height:650px;
+	background-color:#FFF;
+	/*background-image: url(../images/TMP_bg_home.jpg);*/
+
+	/*margin-left: -500px;*/  /***  width / 2   ***/
+	position: relative;
+	top: 25px;/*-325px;*/          /***  height / 2   ***/
+	/*left: 50%;*/
+
+}
+
+div#chx_header {
+	width:730px;
+	height:110px;
+	float:right;
+}
+div#chx_page {
+/*	position:relative;
+	top:0px;
+	left: 0px; */
+	width:1000px;
+	/*height:517px;*/
+	clear:both;
+}
+div#chx_content {
+	width:1000px;
+	height:517px
+}
+
+div#chx_patella {
+	background: url(../images/patella2010.jpg);
+	width:258px;
+	height:110px;
+	cursor:pointer;
+	float:left;
+	margin-left: -3px;
+	margin-top:-2px;
+}
+div#chx_patella a {
+    display:block;
+	width:258px;
+	height:110px;
+	position:relative;
+	z-index:120;
+}
+div#chx_main_menu {
+	margin: 0 auto;
+}
+div#chx_menu {
+	margin: 0 auto;
+	padding-left:60px;
+	height:69px;
+	max-height:69px;
+}
+
+
+div#home_content {
+	width:800px;
+	height:417px;
+	margin: 0 auto;
+	padding-top:100px;
+}
+div#main_disegni, div#main_pongo, div#main_bambini, div#main_mappe {
+	float: left;
+	margin: 0 15px;
+	width:170px;
+	height:170px;
+	cursor:pointer;
+}
+div#main_bottom {
+	width:400px;
+	margin: 100px auto 0 auto;
+}
+div#main_info, div#main_posta {
+	float: left;
+	margin:50px;
+	margin-top:80px;
+}
+div#main_info {
+	margin-top: 100px;
+	margin-left:100px;
+}
+div#menu_disegni, div#menu_pongo, div#menu_bambini, div#menu_mappe {
+	float: left;
+	margin: 0 5px;
+	height:69px;
+	max-height:69px;
+	overflow:hidden;
+}
+div#page_extras {
+    position:relative;
+    float:right;
+    z-index:110;
+    margin-top:-600px;
+}
+div#page_info {
+    margin-left:10px;
+}
+div#page_posta {
+	margin-top:20px;
+	margin-right:5px;
+}
+div#left_spacer {
+	/*width:5px;*/
+	height:80px;
+	float:left;
+}
+div#page_content {
+	height:500px;
+	padding:0 40px;
+}
+div#currback {
+	margin: 0 auto;
+}
+.redbox {
+	width:80px;
+	height:5px;
+	margin:0;
+	padding:0;
+	max-height:5px;
+	background:#AB170B;
+}
+div#menu_disegni .redbox {
+	width:90px;
+	margin-left:10px;
+}
+div#menu_bambini .redbox {
+	width:95px;
+	margin-left:16px;
+}
+div#menu_mappe .redbox {
+	margin-left:28px;
+}
+div#menu_pongo .redbox {
+	margin-left:16px;
+}

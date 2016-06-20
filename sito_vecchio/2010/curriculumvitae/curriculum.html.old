@@ -1,0 +1,62 @@
+<html>
+<head>
+<script>
+<!--
+function weblink()
+{
+
+parent.frames.sotto.location.href="../index_sotto.html";
+}
+
+// -->
+</script>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFCC" onLoad="weblink();">
+<div id="Layer3" style="position:absolute; width:553px; height:253px; z-index:17; left: 249px; top: 140px; visibility: visible"> 
+  <blockquote> 
+    <p align="left"><font size="3" face="Times New Roman, Times, serif">Sono nata 
+      a Roma il 13 novembre 1970. Mi sono diplomata al liceo artistico a Roma 
+      nel 1989, dagli studi di storia dell'arte all'universita' sono passata poi 
+      alla Kunstgewerbeschule a Zurigo dove ho seguito un corso di scultura su 
+      pietra e su legno e lavoravo in uno studio di decorazione.</font><font size="3" face="Times New Roman, Times, serif">Nel 
+      1992 sono tornata a Roma e ho realizzato decorazioni e bassorilievi soprattutto 
+      in locali notturni.</font><font size="3" face="Times New Roman, Times, serif"> 
+      Dal 1995 al 1997 collaboro presso lo studio Mekkanografici Associati e successivamente 
+      presso lo Studiotto curando numerosi lavori di grafica editoriale e pubblicitaria. 
+      Come illustratrice ho disegnato il libro "Nyma e il mondo dei sogni" pubblicato 
+      da Fratelli Palombi Editori e alcune copertine per la casa editrice E/O. 
+      Nello stesso periodo ho realizzato alcuni disegni con Young & Rubicam per 
+      la campagna pubblicitaria della catena di negozi Eldo e con Saatchi & Saatchi 
+      ho collaborato ala campagna per SNAI. Ho curato l'immagine del Viareggio 
+      Film Festival, altri miei clienti: Organizzzione Mondiale della Sanita', 
+      Comune di Roma, Pfizer, WWF, Q8, Gambero Rosso, Regione Abruzzo, Legapesca, 
+      e altri. La mia passione &egrave; fare "pupazzi" e oggetti in pongo e altri 
+      materiali. Con il pongo ho illustrato il Rubricotto che è stato selezionato 
+      nell'Europeean Design Annual del 2000. Le illustrazoni sono realizzate con 
+      diverse tecniche: tempera, computer, tecniche miste.</font></p>
+    <p align="left">In questo periodo sto realizzando una lampada, un candelabro 
+      e un vaso-testa che saranno presto visibili nella sezione &quot;oggetti&quot;.</p>
+    <p align="left"><font face="Times New Roman, Times, serif" size="3"> p.chartroux@agora.it</font></p>
+  </blockquote>
+</div>
+<div id="Layer4" style="position:absolute; width:80px; height:34px; z-index:7; left: 347px; top: 17px; visibility: visible"> 
+  <p><a href="../cartinetutto/cartine_sopra.html"><img src="../cartinescritta.gif" width="99" height="43" border="0"></a></p>
+</div>
+<div id="Layer7" style="position:absolute; width:80px; height:34px; z-index:11; left: 465px; top: 13px; visibility: visible"><a href="../oggettitutto/oggetti_sopra.html"><img src="../oggettiscritta.gif" width="105" height="45" border="0"></a></div>
+<div id="Layer5" style="position:absolute; width:66px; height:34px; z-index:9; left: 704px; top: 8px; visibility: visible"><a href="../loghitutto/loghi_sopra.html"><img src="../loghiscritta.gif" width="65" height="51" border="0"></a></div>
+<div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:6; left: 0; top: 0; visibility: visible"> 
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="310" height="133">
+    <param name=movie value="../patellanome.swf">
+    <param name=quality value=high>
+    <embed src="../patellanome.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="310" height="133">
+    </embed> 
+  </object> </div>
+<div id="Layer1" style="position:absolute; width:109px; height:53px; z-index:14; left: 584px; top: 13px; visibility: visible"><a href="disegnitutto/disegni_sopra.html" target="sopra"><img src="../disegniscritta.gif" width="99" height="43" border="0"></a></div>
+<div id="Layer6" style="position:absolute; width:176px; height:24px; z-index:15; left: 36px; top: 191px; visibility: visible"><font color="#FFFFCC">paola 
+  chartroux illustrazioni</font></div>
+<div id="Layer11" style="position:absolute; width:62px; height:30px; z-index:16; left: 210px; top: 394px; visibility: visible"><a href="mailto:p.chartroux@agora.it"><img src="../postadue.gif" width="60" height="28" border="0"></a></div>
+</body>
+</html>

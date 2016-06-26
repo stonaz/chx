@@ -57,9 +57,9 @@ div#chx_menu {
 .menu_black {
     background: transparent;
 	float: left;
-	/*margin: 0 5px;*/
+	margin: 0 5px;
 	padding:0;
-	margin:0 auto;
+	/*margin:0 auto;*/
 	/*text-align: center;*/
 	font-family: 'Open Sans Condensed', serif;
 	font-size: 41px;
@@ -74,9 +74,9 @@ div#chx_menu {
         color: #7e6a5c;
 
 	float: left;
-	/*margin: 0 5px;*/
+	margin: 0 5px;
 	padding:0;
-	margin:0 auto;
+	/*margin:0 auto;*/
 	/*text-align: center;*/
 	font-family: 'Open Sans Condensed', serif;
 	font-size: 41px;

@@ -36,12 +36,13 @@ $(document).ready(function(){
 	//setRolloverMenu('menu_pongo');
 	//setRolloverMenu('menu_bambini');
 	//setRolloverMenu('menu_mappe');
-	$( ".boxHeader a" ).click(function( event ) {
+$( ".boxHeader a" ).click(function( event ) {
 var addressValue = $(this).attr("href");
 event.preventDefault();
-alert($(this).children('img').attr('alt'))
+var text = ($(this).children('img').attr('alt'))
+//alert(text)
 $( ".boxImage" ).attr("src",addressValue);
-
+$( ".boxImageText" ).html(text)
 });
 // $( window ).load(function() {
 //$( ".menu-img" ).each( function() {
@@ -63,20 +64,22 @@ $( ".boxImage" ).attr("src",addressValue);
 </head>
 
 <body>
-<div id="test">
+	
+<div id="divertimappa" class="boxImageContent">
+	
+	<div class="boxImageContainer" >
+		<div>
+			<img class="boxImage"  src="2011/bambini/0___divertimappa_1.jpg"  alt="Divertimappa 1" >	
+		</div>
+		<div class="boxImageText">
+			Divertimappa 1
+		</div>
 	<div class="boxHeader">
-		<a  href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg"  title="Acquarello su cartone spumeggiato e pennarelli su carta di bambù"> </a>
-		<a href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg"  alt="Acquarello su cartone spumeggiato e pennarelli su carta di bambù" > </a>
-		<a href="2011/mappe/02_cartinamolise.jpg"><img src="2011/mappe/i02_cartinamolise.jpg" alt="Cocce di formaggio e mollica di pane raffermo" ></a>
-	
+		<a  href="2011/bambini/0___divertimappa_1.jpg"><img src="2011/bambini/i0___divertimappa_1.jpg"  alt="Divertimappa 1"> </a>
+		<a  href="2011/bambini/0___divertimappa_2.jpg"><img src="2011/bambini/i0___divertimappa_2.jpg" alt="Divertimappa 2" ></a>
+		<a  href="2011/bambini/0___divertimappa_3.jpg"><img src="2011/bambini/i0___divertimappa_3.jpg" alt="Divertimappa 3" ></a>
 	</div>
-	<div >
-		<img class="boxImage" src="2011/mappe/01_cartinaitalia.jpg"  alt="Acquarello su cartone spumeggiato e pennarelli su carta di bambù" >
-	
-	</div>
-		
-	
-	
+	</div>	
 </div>
 	<div id="vertical_container">
 	
@@ -118,6 +121,7 @@ $( ".boxImage" ).attr("src",addressValue);
 				
 <!-- InstanceBeginEditable name="content" -->
 <div class="images">
+<a href="2011/bambini/0___divertimappa.jpg"><img src="2011/bambini/i0___divertimappa.jpg" title="Divertimappa" alt='<a href=javascript:openModal("divertimappa")><img src="images/square.png"> See more</a>'   </a>
 <a href="2011/bambini/01_elicirco1.jpg"><img src="2011/bambini/i01_elicirco1.jpg" alt="" title=""></a>
 <a href="2011/bambini/02_elicirco3.jpg"><img src="2011/bambini/i02_elicirco3.jpg" alt="" title=""></a>
 <a href="2011/bambini/03_elicirco2.jpg"><img src="2011/bambini/i03_elicirco2.jpg" alt="" title=""></a>

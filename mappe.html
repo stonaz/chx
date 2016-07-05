@@ -23,19 +23,6 @@
 $(document).ready(function(){
 	
 	$('.images').galleria();
-	//// manage rollovers
-	//setRollover('page_info');
-	//setRollover('page_posta');
-	//
-	//$("#menu_mappe a img").attr("src","images/menu_mappe_on.gif");
-	//$("#menu_mappe").addClass("current");
-	//for (var i in sections ) {
-	//	hilightMenu("menu_"+i,false);
-	//}
-	//setRolloverMenu('menu_disegni');
-	//setRolloverMenu('menu_pongo');
-	//setRolloverMenu('menu_bambini');
-	//setRolloverMenu('menu_mappe');
 	$( ".boxHeader a" ).click(function( event ) {
 var addressValue = $(this).attr("href");
 event.preventDefault();
@@ -104,7 +91,7 @@ $( ".boxImageText" ).html(text)
 		<div class="menu_beige inactive">
 			<a href="bambini.html">CHILDREN'S</a>
 		</div>
-		<div class="menu_black ">
+		<div class="menu_red active ">
 			MAPSLOGOS
 		</div>
 		<div class="menu_beige inactive">

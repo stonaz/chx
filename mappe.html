@@ -22,25 +22,15 @@
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){
 	
-	$('.images').galleria();
-	$( ".boxHeader a" ).click(function( event ) {
+$('.images').galleria();
+$( ".boxHeader a" ).click(function( event ) {
 var addressValue = $(this).attr("href");
 event.preventDefault();
 var text = ($(this).children('img').attr('alt'))
-//alert(text)
 $( ".boxImage" ).attr("src",addressValue);
 $( ".boxImageText" ).html(text)
 });
-// $( window ).load(function() {
-//$( ".menu-img" ).each( function() {
-//    var $img = $( this );
-//    console.log( $img.width());
-//    $img.width( $img.width() * .5 );
-//
-//    
-//});
-//console.log('test')
-//});	
+
 
 
 });
@@ -52,22 +42,22 @@ $( ".boxImageText" ).html(text)
 
 <body>
 	
-<div id="test" class="boxImageContent">
-	
-	<div class="boxImageContainer" >
-		<div>
-			<img class="boxImage"  src="2011/mappe/01_cartinaitalia.jpg"  alt="Il veliero dei delfini 1" >	
-		</div>
-		<div class="boxImageText">
-			Il veliero dei delfini 1
-		</div>
-	<div class="boxHeader">
-		<a  href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg"  alt="Il veliero dei delfini 1"> </a>
-		<a  href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg" alt="Il veliero dei delfini 2" ></a>
-	
-	</div>
-	</div>	
-</div>
+<!--<div id="test" class="boxImageContent">-->
+<!--	-->
+<!--	<div class="boxImageContainer" >-->
+<!--		<div>-->
+<!--			<img class="boxImage"  src="2011/mappe/01_cartinaitalia.jpg"  alt="Il veliero dei delfini 1" >	-->
+<!--		</div>-->
+<!--		<div class="boxImageText">-->
+<!--			Il veliero dei delfini 1-->
+<!--		</div>-->
+<!--	<div class="boxHeader">-->
+<!--		<a  href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg"  alt="Il veliero dei delfini 1"> </a>-->
+<!--		<a  href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg" alt="Il veliero dei delfini 2" ></a>-->
+<!--	-->
+<!--	</div>-->
+<!--	</div>	-->
+<!--</div>-->
 
 
 	
@@ -109,7 +99,7 @@ $( ".boxImageText" ).html(text)
 				
 <!-- InstanceBeginEditable name="content" -->
 <div class="images">
-<a href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg" title="Il veliero dei delfini" alt='<a href=javascript:openModal("test")><img src="images/square.png"> See more</a>'   </a>
+<!--<a href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg" title="Il veliero dei delfini" alt='<a href=javascript:openModal("test")>See more...</a>'   </a>-->
 <a href="2011/mappe/01_cartinaitalia.jpg"><img src="2011/mappe/i01_cartinaitalia.jpg" title="Il veliero dei delfini"    </a>
 <a href="2011/mappe/02_cartinawwf.jpg"><img src="2011/mappe/i02_cartinawwf.jpg" alt="" ></a>
 <a href="2011/mappe/03_cartinatelaa.jpg"><img src="2011/mappe/i03_cartinatelaa.jpg" alt="" title=""></a>

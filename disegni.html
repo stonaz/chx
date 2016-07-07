@@ -21,40 +21,14 @@
 <!-- InstanceBeginEditable name="head" -->
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){
-	
-	$('.images').galleria();
-	//// manage rollovers
-	//setRollover('page_info');
-	//setRollover('page_posta');
-	//
-	//$("#menu_mappe a img").attr("src","images/menu_mappe_on.gif");
-	//$("#menu_mappe").addClass("current");
-	//for (var i in sections ) {
-	//	hilightMenu("menu_"+i,false);
-	//}
-	//setRolloverMenu('menu_disegni');
-	//setRolloverMenu('menu_pongo');
-	//setRolloverMenu('menu_bambini');
-	//setRolloverMenu('menu_mappe');
-	$( ".boxHeader a" ).click(function( event ) {
+$('.images').galleria();
+$( ".boxHeader a" ).click(function( event ) {
 var addressValue = $(this).attr("href");
 event.preventDefault();
-alert($(this).children('img').attr('alt'))
+var text = ($(this).children('img').attr('alt'))
 $( ".boxImage" ).attr("src",addressValue);
-
+$( ".boxImageText" ).html(text)
 });
-// $( window ).load(function() {
-//$( ".menu-img" ).each( function() {
-//    var $img = $( this );
-//    console.log( $img.width());
-//    $img.width( $img.width() * .5 );
-//
-//    
-//});
-//console.log('test')
-//});	
-
-
 });
 
 
@@ -112,7 +86,7 @@ $( ".boxImage" ).attr("src",addressValue);
 <a href="2011/disegni/07_arianna2.jpg"><img src="2011/disegni/i07_arianna2.jpg" alt="" title=""></a>
 <a href="2011/disegni/08_arianna3.jpg"><img src="2011/disegni/i08_arianna3.jpg" alt="" title=""></a>
 <a href="2011/disegni/09_tangenzialeroma.jpg"><img src="2011/disegni/i09_tangenzialeroma.jpg" alt="" title=""></a>
-<a href="2011/disegni/0010_gamberogiornaliste.jpg"><img src="2011/disegni/i010_gamberogiornaliste.jpg" alt="" title=""></a>
+<a href="2011/disegni/010_gamberogiornaliste.jpg"><img src="2011/disegni/i010_gamberogiornaliste.jpg" alt="" title=""></a>
 <a href="2011/disegni/011_arianna4.jpg"><img src="2011/disegni/i011_arianna4.jpg" alt="" title=""></a>
 <a href="2011/disegni/012_tango.jpg"><img src="2011/disegni/i012_tango.jpg" alt="" title=""></a>
 <a href="2011/disegni/013_natura.jpg"><img src="2011/disegni/i013_natura.jpg" alt="" title=""></a>
